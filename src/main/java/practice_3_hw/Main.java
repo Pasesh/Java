@@ -16,7 +16,7 @@ public class Main {
         MathConstants.printInfo(5);
 
         University student1 = new University(1, "Григорий");
-        University student2 = new University(2, "Кизьмин");
+        University student2 = new University(2, "Кузьмин");
         University student3= new University(3, "Татьяна");
 
         University.changeUniversityName("МГУ");
