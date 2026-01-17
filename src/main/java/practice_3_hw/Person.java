@@ -9,7 +9,7 @@ public class Person {
     Person(String firstName, String lastName, String ssn){
         this.firstName = firstName;
         this.lastName = lastName;
-        this.ssn= ssn;
+        this.ssn = ssn;
     }
 
     String getFirstName(){
