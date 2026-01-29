@@ -1,3 +1,5 @@
+package practice_1;
+
 public class MathOperations {
 
     public static int add (int x, int y){

@@ -3,7 +3,9 @@ package practice_4_hw1;
 import java.util.Scanner;
 
 public class DoWhileTaskSolver {
+    private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
+
         //Запрос положительного числа
         getPositiveNumber();
 
@@ -11,7 +13,7 @@ public class DoWhileTaskSolver {
         checkPassword();
 
         //Вывод чисел от 1 до 10 с использованием do-while
-        printNumbersFromOnneToTen();
+        printNumbersFromOneToTen();
 
         //Завершение программы по команде "exit"
         exitProgram();
@@ -23,7 +25,7 @@ public class DoWhileTaskSolver {
     }
 
     public static void getPositiveNumber() {
-        Scanner scanner = new Scanner(System.in);
+
 
         int num;
         do {
@@ -34,7 +36,7 @@ public class DoWhileTaskSolver {
     }
 
     public static void checkPassword() {
-        Scanner scanner = new Scanner(System.in);
+
         String password;
 
         do {
@@ -45,7 +47,7 @@ public class DoWhileTaskSolver {
         System.out.println("Пароль верный");
     }
 
-    public static void printNumbersFromOnneToTen() {
+    public static void printNumbersFromOneToTen() {
 
         int i = 1;
         do {
@@ -55,7 +57,7 @@ public class DoWhileTaskSolver {
     }
 
     public static void exitProgram() {
-        Scanner scanner = new Scanner(System.in);
+
         String command;
 
         do {
@@ -67,7 +69,7 @@ public class DoWhileTaskSolver {
     }
 
     public static int getDigitalCount() {
-        Scanner scanner = new Scanner(System.in);
+
         System.out.print("Введите число: ");
         int num = scanner.nextInt();
         int count = 0;

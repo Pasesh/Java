@@ -3,6 +3,7 @@ package practice_4_hw1;
 import java.util.Scanner;
 
 public class IfElseTaskSolver {
+    private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         //Определение знака числа
         System.out.println(getNumber());
@@ -14,13 +15,13 @@ public class IfElseTaskSolver {
         System.out.println(printGradeResult());
 
         //Проверка на чётность
-        System.out.println(iSEven());
+        System.out.println(isEven());
 
         //Определение размера скидки по возрасту
         System.out.println(getDiscountByAge());
 
         //Оценка результата теста по баллам
-        System.out.println(printTestTesult());
+        System.out.println(printTestResult());
 
 
 
@@ -29,7 +30,6 @@ public class IfElseTaskSolver {
     }
 
     public static String getNumber(){
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите число: ");
 
@@ -50,7 +50,6 @@ public class IfElseTaskSolver {
 
     public static int findMaxOfTwo(){
 
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите первое число: ");
         int a = scanner.nextInt();
@@ -73,7 +72,6 @@ public class IfElseTaskSolver {
     }
 
     public static String printGradeResult(){
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите число от 1 до 5: ");
         int number = scanner.nextInt();
@@ -98,8 +96,8 @@ public class IfElseTaskSolver {
         return result;
     }
 
-    public static String iSEven(){
-        Scanner scanner = new Scanner(System.in);
+    public static String isEven(){
+
 
         System.out.print("Введите число: ");
         int number = scanner.nextInt();
@@ -108,7 +106,6 @@ public class IfElseTaskSolver {
     }
 
     public static String getDiscountByAge(){
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите ваш возраст: ");
         int age = scanner.nextInt();
@@ -129,8 +126,7 @@ public class IfElseTaskSolver {
     return result;
     }
 
-    public static String printTestTesult() {
-        Scanner scanner = new Scanner(System.in);
+    public static String printTestResult() {
 
         System.out.print("Введите ваш результат теста от 0 до 100: ");
         int number = scanner.nextInt();

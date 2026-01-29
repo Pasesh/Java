@@ -4,22 +4,24 @@ import java.util.Scanner;
 
 public class BreakContinueTaskSolver {
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
         //Сумма чисел до первого отрицательного (использовать break)
-        System.out.println(sumUntilNegative());
+        System.out.println(sumUntilNegative(scanner));
 
         //Пропуск чисел, делящихся на 3 (использовать continue)
         skipNumbers();
 
         //Вывод только положительных чисел (использовать continue)
-        printPositiveNumbers();
+        printPositiveNumbers(scanner);
 
         //Ввод строк до команды "stop" (использовать break)
-        isStopCommand();
+        isStopCommand(scanner);
 
     }
 
-    public static int sumUntilNegative(){
-        Scanner scanner = new Scanner(System.in);
+    public static int sumUntilNegative(Scanner scanner){
 
         int sum = 0;
 
@@ -44,8 +46,7 @@ public class BreakContinueTaskSolver {
         }
     }
 
-    public static void printPositiveNumbers(){
-        Scanner scanner = new Scanner(System.in);
+    public static void printPositiveNumbers(Scanner scanner){
         do {
             System.out.print("Введите число: ");
             int num = scanner.nextInt();
@@ -59,8 +60,8 @@ public class BreakContinueTaskSolver {
         } while (true);
     }
 
-    public static void isStopCommand(){
-        Scanner scanner = new Scanner(System.in);
+    public static void isStopCommand(Scanner scanner){
+        scanner.nextLine();
         while (true){
             System.out.print("Введите строку: ");
             String command = scanner.nextLine();

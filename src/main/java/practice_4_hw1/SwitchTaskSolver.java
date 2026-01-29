@@ -4,27 +4,29 @@ import java.util.Scanner;
 
 public class SwitchTaskSolver {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
         //Вывод дня недели по номеру
-        System.out.println(determineDateOfWeek());
+        System.out.println(determineDateOfWeek(scanner));
 
         //Стоимость билета по дню недели
-        System.out.println(getTicketPrice());
+        System.out.println(getTicketPrice(scanner));
 
         //Перевод числовых оценок в буквенные (A–F)
-        System.out.println(convertScore());
+        System.out.println(convertScore(scanner));
 
         //Обработка текстовых команд
-        System.out.println(handleCommand());
+        System.out.println(handleCommand(scanner));
 
         //Простой калькулятор с использованием switch
-        System.out.println(calculate());
+        System.out.println(calculate(scanner));
 
 
 
     }
 
-    public static String determineDateOfWeek() {
-        Scanner scanner = new Scanner(System.in);
+    public static String determineDateOfWeek(Scanner scanner) {
+
 
         System.out.print("Введите число от 1 до 7: ");
         int day = scanner.nextInt();
@@ -44,8 +46,7 @@ public class SwitchTaskSolver {
         return description;
     }
 
-    public static String getTicketPrice() {
-        Scanner scanner = new Scanner(System.in);
+    public static String getTicketPrice(Scanner scanner) {
 
         System.out.print("Введите число от 1 до 7: ");
         int day = scanner.nextInt();
@@ -60,8 +61,7 @@ public class SwitchTaskSolver {
         return description;
     }
 
-    public static String convertScore() {
-        Scanner scanner = new Scanner(System.in);
+    public static String convertScore(Scanner scanner) {
 
         System.out.print("Введите число от 0 до 100: ");
         int num = scanner.nextInt();
@@ -84,8 +84,7 @@ public class SwitchTaskSolver {
         return result;
     }
 
-    public static String handleCommand() {
-        Scanner scanner = new Scanner(System.in);
+    public static String handleCommand(Scanner scanner) {
 
         System.out.print("Введите команду: ");
         String command = scanner.nextLine();
@@ -102,22 +101,22 @@ public class SwitchTaskSolver {
         return result;
     }
 
-    public static double calculate(){
-        Scanner scanner = new Scanner(System.in);
+    public static double calculate(Scanner scanner){
 
         System.out.print("Введите первое число: ");
-        double a = scanner.nextInt();
+        double a = scanner.nextDouble();
 
         System.out.print("Введите оператор: ");
         String operator = scanner.next();
 
         System.out.print("Введите второе число: ");
-        double b = scanner.nextInt();
+        double b = scanner.nextDouble();
 
         double result = 0;
 
         if(b == 0 && operator.equals("/")){
             System.out.println("Ошибка при деление на 0");
+            return Double.NaN;
 
         }else {
             switch (operator) {

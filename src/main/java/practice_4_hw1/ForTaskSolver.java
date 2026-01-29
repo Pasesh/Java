@@ -3,6 +3,7 @@ package practice_4_hw1;
 import java.util.Scanner;
 
 public class ForTaskSolver {
+    private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
         //Вывод чисел от 1 до 100, делящихся на 3
@@ -18,7 +19,7 @@ public class ForTaskSolver {
         System.out.println(checkPrime());
 
         //Вывод чисел от 1 до 10
-        PrintNumbers();
+        printNumbers();
 
 
     }
@@ -32,7 +33,6 @@ public class ForTaskSolver {
 
     public static int calculateSum() {
 
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите положительное число: ");
         int n = scanner.nextInt();
@@ -51,7 +51,6 @@ public class ForTaskSolver {
 
     public static void printMultiplicationTable() {
 
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите положительное число: ");
         int n = scanner.nextInt();
@@ -62,8 +61,6 @@ public class ForTaskSolver {
     }
 
     public static String checkPrime() {
-
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите положительное число: ");
         int n = scanner.nextInt();
@@ -77,13 +74,14 @@ public class ForTaskSolver {
             for (int i = 2; i <= n - 1; i++) {
                 if (n % i == 0) {
                     description = "Не является простым числом";
+                    break;
                 }
             }
         }
         return description;
     }
 
-    public static void PrintNumbers() {
+    public static void printNumbers() {
         for (int i = 1; i <= 10; i++) {
             System.out.println(i);
         }

@@ -4,21 +4,20 @@ import java.util.Scanner;
 
 public class WhileTaskSolver {
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner(System.in);
         //Вычисление факториала с помощью while
-        System.out.println(calculateFactorial());
+        System.out.println(calculateFactorial(scanner));
 
         //Вывод всех чётных чисел до заданного
-        printEvenNumbers();
+        printEvenNumbers(scanner);
 
         //Обратный отсчёт от введённого числа до 1
-        printCountdownFrom();
+        printCountdownFrom(scanner);
 
     }
 
-    public static int calculateFactorial() {
+    public static int calculateFactorial(Scanner scanner) {
 
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Введите положительное число: ");
 
         int n = scanner.nextInt();
@@ -35,8 +34,7 @@ public class WhileTaskSolver {
         }
         return result;
     }
-    public static void printEvenNumbers(){
-        Scanner scanner = new Scanner(System.in);
+    public static void printEvenNumbers(Scanner scanner){
         System.out.print("Введите число: ");
 
         int n = scanner.nextInt();
@@ -49,9 +47,8 @@ public class WhileTaskSolver {
             i++;
         }
     }
-    public static void printCountdownFrom(){
+    public static void printCountdownFrom(Scanner scanner){
 
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Введите положительное число: ");
 
         int n = scanner.nextInt();
