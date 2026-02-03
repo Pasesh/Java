@@ -14,13 +14,7 @@ public class Farm {
             return;
         }
         farmAnimal.produce();
-        if(this.farmAnimal instanceof Feedable){
-            Feedable feedableAnimal = (Feedable) this.farmAnimal;
-            feedableAnimal.feed();
-        }
-        if (this.farmAnimal instanceof Careable){
-            Careable careableAnimal = (Careable) this.farmAnimal;
-            careableAnimal.care();
-        }
+        farmAnimal.feed();
+        farmAnimal.care();
     }
 }

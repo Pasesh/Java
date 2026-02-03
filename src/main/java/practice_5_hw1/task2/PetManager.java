@@ -14,16 +14,6 @@ public class PetManager {
             return;
         }
         pet.feed();
-
-        if(this.pet instanceof Playable){
-            Playable playablePet = (Playable) this.pet;
-            playablePet.play();
-        }
-        if (this.pet instanceof Walkable){
-            Walkable walkablePet = (Walkable) this.pet;
-            walkablePet.walk();
-        }
-        else System.out.println("Ошибка");
-
+        pet.interact();
     }
 }
