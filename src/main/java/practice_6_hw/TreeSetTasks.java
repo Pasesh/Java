@@ -10,6 +10,6 @@ public class TreeSetTasks {
         set.add(5);
         set.add(1);
         set.add(3);
-        System.out.println(set);
+        System.out.println("Множество: " + set);
     }
 }

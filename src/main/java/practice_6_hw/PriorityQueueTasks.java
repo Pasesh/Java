@@ -11,7 +11,7 @@ public class PriorityQueueTasks {
         queue.offer(3);
         queue.offer(1);
 
-        System.out.println(queue);
+        System.out.println("Очередь: " + queue);
 
         while (!queue.isEmpty()) {
             System.out.println(queue.poll());

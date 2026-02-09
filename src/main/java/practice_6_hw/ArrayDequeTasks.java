@@ -5,6 +5,7 @@ import java.util.Queue;
 
 public class ArrayDequeTasks {
     public static void main(String[] args) {
+        //Задача 1
         ArrayDeque<String> deque = new ArrayDeque<>();
         deque.add("A");
         deque.add("D");
@@ -32,10 +33,5 @@ public class ArrayDequeTasks {
         while (!deque1.isEmpty()){
             System.out.println(deque1.pop());
         }
-
-
-
-
-
     }
 }
