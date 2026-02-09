@@ -51,9 +51,5 @@ public class LinkedListTasks {
         while (it.hasPrevious()){
             System.out.println("Проход назад по элементам: " + it.previous());
         }
-
-
-
-
     }
 }

@@ -4,6 +4,7 @@ import java.util.HashSet;
 
 public class HashSetTasks {
     public static void main(String[] args) {
+        //Задача 1
         HashSet<Integer> set = new HashSet<>();
         set.add(2);
         set.add(4);
@@ -12,6 +13,7 @@ public class HashSetTasks {
         set.add(2);
         System.out.println(set);
 
+        //Задача 2
         HashSet<Integer> setNum = new HashSet<>();
         setNum.add(2);
         setNum.add(4);
