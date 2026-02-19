@@ -13,6 +13,7 @@ public class LinkedListTasks {
         list.add("E");
         list.add("Z");
         System.out.println("Список: " + list);
+        System.out.println();
 
         //Задача 2
         LinkedList<String> tasks = new LinkedList<>();
@@ -23,10 +24,12 @@ public class LinkedListTasks {
         while (!tasks.isEmpty()){
             System.out.println("Process: " + tasks.poll());
         }
+        System.out.println();
 
         //Задача 3
         System.out.println("Первый элемент списка: " + list.getFirst());
         System.out.println("Последний элемент списка: " + list.getLast());
+        System.out.println();
 
         //Задача 4
         LinkedList<Integer> listNum = new LinkedList<>();
@@ -41,6 +44,7 @@ public class LinkedListTasks {
              sum += n;
          }
         System.out.println("Сумма элементов списка: " + sum);
+        System.out.println();
 
          //Задача 5
         ListIterator<String> it = list.listIterator();
@@ -48,6 +52,7 @@ public class LinkedListTasks {
         while (it.hasNext()){
             System.out.println("Проход вперед по элементам: " + it.next());
         }
+        System.out.println();
         while (it.hasPrevious()){
             System.out.println("Проход назад по элементам: " + it.previous());
         }

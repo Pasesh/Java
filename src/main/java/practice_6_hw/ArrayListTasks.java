@@ -41,7 +41,7 @@ public class ArrayListTasks {
         System.out.println("Сумма чисел: " + sum);
 
         //Задача 5
-        int maxNum = arrayList.getFirst();
+        int maxNum = arrayList.get(0);
         for(Integer n : arrayList){
             if(n > maxNum){
                 maxNum = n;

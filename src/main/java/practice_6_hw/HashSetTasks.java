@@ -1,6 +1,6 @@
 package practice_6_hw;
 
-import java.util.HashSet;
+import java.util.*;
 
 public class HashSetTasks {
     public static void main(String[] args) {
@@ -31,6 +31,32 @@ public class HashSetTasks {
             System.out.println("Число "  + foundNum + " содержится в множестве");
         }else {
             System.out.println("Число " + foundNum +" НЕ содержится в множестве");
-        };
+        }
+
+        //Задача 3
+        List<String> listWithDuplicates = Arrays.asList("apple",
+                "apple", "orange", "banana", "banana");
+        Set<String> uniqueItems = removeDuplicates(listWithDuplicates);
+        System.out.println("Unique items: " + uniqueItems);
+
+        //Задача 4
+        HashSet<String> names = new HashSet<>();
+        names.add("Alla");
+        names.add("Olga");
+        names.add("Andrew");
+        names.add("Zoya");
+        names.add("Katya");
+
+        Scanner scanner = new Scanner(System.in);
+        String foundName = scanner.nextLine();
+
+        if (names.contains(foundName)) {
+            System.out.println("Имя " + foundName + " содержится в списке");
+        } else {
+            System.out.println("Имя " + foundName + " НЕ содержится в списке");
+        }
+    }
+    public static Set<String> removeDuplicates(List<String> input) {
+        return new HashSet<>(input);
     }
 }

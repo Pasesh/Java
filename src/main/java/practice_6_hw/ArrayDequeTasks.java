@@ -5,14 +5,14 @@ import java.util.Queue;
 
 public class ArrayDequeTasks {
     public static void main(String[] args) {
-        //Задача 1
+        //Задача 1 -Queue mode
         ArrayDeque<String> deque = new ArrayDeque<>();
         deque.add("A");
         deque.add("D");
         deque.add("C");
         deque.add("E");
         deque.add("A");
-        //Задача 1
+        //Задача 1 - Stack mode
         System.out.println(deque);
         System.out.println("Queue");
 
@@ -33,5 +33,12 @@ public class ArrayDequeTasks {
         while (!deque1.isEmpty()){
             System.out.println(deque1.pop());
         }
+
+        //Задача 3
+        deque1.addFirst("Z");
+        deque1.addLast("Q");
+        System.out.println();
+        System.out.println(deque1.removeFirst());
+        System.out.println(deque1.removeLast());
     }
 }
