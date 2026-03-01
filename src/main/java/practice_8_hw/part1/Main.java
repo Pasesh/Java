@@ -10,12 +10,20 @@ public class Main {
         MathOperation sum = (x, y) -> x + y;
         MathOperation subtract = (x, y) -> x - y;
         MathOperation multiply = (x, y) -> x * y;
-        MathOperation divide = (x, y) -> x / y;
+        MathOperation divide = (x, y) -> {
+            if (y == 0) {
+                throw new ArithmeticException("Деление на 0 запрещено");
+            }
+            return x / y;
+        };
 
         System.out.println(sum.operate(4.5, 5.4));
         System.out.println(subtract.operate(10.1, 5.1));
         System.out.println(multiply.operate(15.4, 5.2));
-        System.out.println(divide.operate(15, 2));
+        try {
+            System.out.println(divide.operate(15, 0));
+            } catch (ArithmeticException e) {
+        }
         System.out.println();
 
         System.out.println("Task 2");
@@ -32,7 +40,7 @@ public class Main {
         System.out.println("Task 3");
         Predicate<Integer> isEven = x -> x % 2 ==0;
         int number = 7;
-        System.out.println("Чило " + number + (isEven.test(number)? " четное":" нечетное"));
+        System.out.println("Число " + number + (isEven.test(number)? " четное" : " нечетное"));
         System.out.println();
 
         System.out.println("Task 4");
@@ -42,6 +50,6 @@ public class Main {
 
         System.out.println("Task 5");
         Consumer<String> resultPrint = System.out::println;
-        resultPrint.accept("Печать результа");
+        resultPrint.accept("Печать результата");
     }
 }

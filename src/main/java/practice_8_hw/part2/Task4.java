@@ -9,7 +9,7 @@ public class Task4 {
         List<Integer> integerList = Arrays.asList(1, 5, 4, 10, 6);
         List<Integer> squareList = integerList.stream()
                 .map(x -> x * x)
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println(squareList);
     }

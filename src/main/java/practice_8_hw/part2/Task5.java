@@ -9,7 +9,7 @@ public class Task5 {
         List<String> stringList = Arrays.asList("banana", "kiwi", "orange", "kiwi", "banana");
         List<String> uniqueList = stringList.stream()
                 .distinct()
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println(uniqueList);
     }

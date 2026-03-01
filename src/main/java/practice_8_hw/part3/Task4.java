@@ -9,7 +9,7 @@ public class Task4 {
         String result = stringList.stream()
                 .filter(s -> s.startsWith("Б"))
                 .findFirst()
-                .orElse("Нисего не найдено");
+                .orElse("Ничего не найдено");
 
         System.out.println(result);
     }

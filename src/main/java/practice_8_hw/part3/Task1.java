@@ -9,7 +9,7 @@ public class Task1 {
         List<Integer> integerList = Arrays.asList(1, 5, 4, 10, 6);
         Integer maxNumber = integerList.stream()
                 .max(Comparator.naturalOrder())
-                .get();
+                .orElse(0);
 
         System.out.println(maxNumber);
     }

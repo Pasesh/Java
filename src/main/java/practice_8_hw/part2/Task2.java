@@ -9,7 +9,7 @@ public class Task2 {
         List<Integer> integerList = Arrays.asList(1, 5, 12, 29, 50);
         List<Integer> filterList = integerList.stream()
                 .filter(x -> x % 5 == 0)
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println(filterList);
     }

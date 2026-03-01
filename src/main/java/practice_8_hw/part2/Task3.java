@@ -9,7 +9,7 @@ public class Task3 {
         List<String> stringList = Arrays.asList("banana", "kiwi", "orange", "apple", "pear");
         List<Integer> integerList = stringList.stream()
                 .map(String::length)
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println(integerList);
     }

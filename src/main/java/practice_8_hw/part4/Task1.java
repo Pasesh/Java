@@ -8,9 +8,9 @@ import java.util.stream.Collectors;
 public class Task1 {
     public static void main(String[] args) {
         List<String> stringList = Arrays.asList("Лариса", "Инна", "Бореслав", "Иван", "Борис");
-        Map<Character, List<String>> gropedByLetter = stringList.stream()
+        Map<Character, List<String>> groupedByLetter = stringList.stream()
                 .collect(Collectors.groupingBy(x -> x.charAt(0)));
 
-        System.out.println(gropedByLetter);
+        System.out.println(groupedByLetter);
     }
 }

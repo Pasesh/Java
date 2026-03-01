@@ -9,7 +9,7 @@ public class Task2 {
         List<Integer> integerList = Arrays.asList(1, 5, 4, 10, 6);
         Integer minNumber = integerList.stream()
                 .min(Comparator.naturalOrder())
-                .get();
+                .orElse(0);
         System.out.println(minNumber);
     }
 }
