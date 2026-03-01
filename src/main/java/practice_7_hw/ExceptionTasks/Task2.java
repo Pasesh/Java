@@ -23,6 +23,7 @@ public class Task2 {
         }catch (ArithmeticException e){
             System.err.println(e.getMessage());
         }
+        scanner.close();
 
     }
 }

@@ -4,6 +4,11 @@ public class Pair<T, U> {
     private T first;
     private U second;
 
+    public Pair(T first, U second) {
+        this.first = first;
+        this.second = second;
+    }
+
     public T getFirst() {
         return first;
     }
@@ -21,10 +26,8 @@ public class Pair<T, U> {
     }
 
     public static void main(String[] args) {
-        Pair <String, Integer> pair = new Pair<>();
+        Pair <String, Integer> pair = new Pair<>("Ann", 20);
 
-        pair.setFirst("Ann");
-        pair.setSecond(20);
         System.out.println(pair.getFirst());
         System.out.println(pair.getSecond());
     }
