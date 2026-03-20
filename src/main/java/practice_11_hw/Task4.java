@@ -5,7 +5,7 @@ public class Task4 {public static void main(String[] args) {
 }
     public static boolean isPalindrome(String str) {
     if(str == null) {
-        throw new IllegalArgumentException("String cannot be null");
+        return false;
     }
         String reversed = new StringBuilder(str).reverse().toString();
         return str.equals(reversed);
